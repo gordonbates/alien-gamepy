@@ -1,7 +1,7 @@
 print("""
 ............................................................
 .                                                          .
-.                Welcome to Alien Gamepy                   .
+.          ----- Welcome to Alien Gamepy -----             .
 .                                                          .
 ............................................................
 """)
@@ -30,7 +30,7 @@ game_running = True
 
 while game_running is True:
     new_battle = True
-    player = {'name': 'Manuel', 'attack': 20, 'heal': 10, 'health': 100}
+    player = {'name': 'Manuel', 'attack': 10, 'heal': 10, 'health': 100}
     alien = {'name': 'Xenomorph XX121', 'attack': 15, 'health': 100}
 
     print('.....' * 12)
@@ -38,11 +38,15 @@ while game_running is True:
     print('Enter Player name')
     player['name'] = input()
 
+    print(player['name'] + ' has ' + str(player['health']) + ' health')
+    print(alien['name'] + ' has ' + str(alien['health']) + ' health')
+
     while new_battle is True:
 
         player_win = False
         alien_win = False
 
+        print('-------')
         print('Please Select An Action:\n')
         print('1. Attack')
         print('2. Heal')
@@ -60,14 +64,6 @@ while game_running is True:
                 if player['health'] <= 0:
                     alien_win = True
 
-            print('-------')
-            print('Alien:')
-            print(alien['health'])
-            print('-------')
-            print('Player:')
-            print(player['health'])
-            print('-------\n')
-
         elif player_action == '2':
             print('Heal')
 
@@ -78,5 +74,14 @@ while game_running is True:
         else:
             print('Invalid Action')
 
-        if player_win is True or alien_win is True:
+        if player_win is False and alien_win is False:
+            print(player['name'] + ' has ' + str(player['health']) + ' left')
+            print(alien['name'] + ' has ' + str(alien['health']) + ' left')     
+        
+        elif player_win:
+            print(player['name'] + ' wins!!')
+            new_battle = False
+        
+        elif alien_win:
+            print('Alien wins! GAME OVER!!')
             new_battle = False
