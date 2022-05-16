@@ -33,6 +33,7 @@ print("""
 """)
 
 game_running = True
+game_results = []
 
 
 def calculate_alien_attack():
@@ -74,6 +75,7 @@ while game_running is True:
         print('1. Attack')
         print('2. Heal')
         print('3. Exit Game')
+        print('4. Show Results')
 
         player_action = input()
 
@@ -114,11 +116,13 @@ while game_running is True:
         elif player_win:
             game_over(player['name'])
             round_result = {'name': player['name'], 'health': player['health'], 'rounds': counter}
-            print(round_result)
+            game_results.append(round_result)
+            print(game_results)
             new_battle = False
 
         elif alien_win:
             game_over(alien['name'])
             round_result = {'name': player['name'], 'health': player['health'], 'rounds': counter}
-            print(round_result)
+            game_results.append(round_result)
+            print(game_results)
             new_battle = False
