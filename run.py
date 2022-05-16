@@ -50,8 +50,8 @@ def game_over(winner_name):
 while game_running is True:
     counter = 0
     new_battle = True
-    player = {'name': 'Manuel', 'attack': 10, 'heal': 14, 'health': 100}
-    alien = {'name': 'Xenomorph', 'att_low': 8, 'att_hi': 16, 'health': 100}
+    player = {'name': '{}', 'attack': 10, 'heal': 12, 'health': 100}
+    alien = {'name': 'Xenomorph', 'att_low': 7, 'att_hi': 16, 'health': 100}
     """
     player and alien values
     """
@@ -88,8 +88,9 @@ while game_running is True:
                 """
 
             else:
-                player['health'] = player['health']
-                - calculate_alien_attack(alien['att_low'], alien['att_hi'])
+                attack_damage = calculate_alien_attack(
+                    alien['att_low'], alien['att_hi'])
+                player['health'] -= attack_damage
                 if player['health'] <= 0:
                     alien_win = True
                     """
@@ -99,8 +100,9 @@ while game_running is True:
         elif player_action == '2':
             player['health'] = player['health'] + player['heal']
 
-            player['health'] = player['health']
-            - calculate_alien_attack(alien['att_low'], alien['att_hi'])
+            attack_damage = calculate_alien_attack(
+                alien['att_low'], alien['att_hi'])
+            player['health'] -= attack_damage
             if player['health'] <= 0:
                 alien_win = True
                 """
@@ -149,3 +151,4 @@ while game_running is True:
                 'rounds': counter}
             game_results.append(round_result)
             new_battle = False
+
