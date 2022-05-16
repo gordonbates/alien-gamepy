@@ -106,6 +106,9 @@ while game_running is True:
             new_battle = False
             game_running = False
 
+        elif player_action == '4':
+            print(game_results)
+
         else:
             print('Invalid Action')
 
@@ -117,12 +120,10 @@ while game_running is True:
             game_over(player['name'])
             round_result = {'name': player['name'], 'health': player['health'], 'rounds': counter}
             game_results.append(round_result)
-            print(game_results)
             new_battle = False
 
         elif alien_win:
             game_over(alien['name'])
             round_result = {'name': player['name'], 'health': player['health'], 'rounds': counter}
             game_results.append(round_result)
-            print(game_results)
             new_battle = False
