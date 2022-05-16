@@ -1,6 +1,6 @@
 from random import randint
 """
-Random module for the dynamic alien attack between 
+Random module for the dynamic alien attack between
 the low and high values set
 """
 
@@ -29,17 +29,17 @@ print("""
       /,'             | | | | | | |             `,\.
      /'               ` | | | | | '               `\.
                         ` | | | '
-                          ` | ' 
+                          ` | '
 """)
 
 game_running = True
 game_results = []
 
 
-def calculate_alien_attack():
-    return randint(alien['att_low'], alien['att_hi'])
+def calculate_alien_attack(att_low, att_hi):
+    return randint(att_low, att_hi)
     """
-    Calculate random attack number using arguments from dictionary below 
+    Calculate random attack number using arguments from dictionary below
     """
 
 
@@ -65,7 +65,7 @@ while game_running is True:
     print(alien['name'] + ' has ' + str(alien['health']) + ' health')
 
     while new_battle is True:
-        
+
         counter = counter + 1
         player_win = False
         alien_win = False
@@ -88,7 +88,8 @@ while game_running is True:
                 """
 
             else:
-                player['health'] = player['health'] - calculate_alien_attack()
+                player['health'] = player['health']
+                - calculate_alien_attack(alien['att_low'], alien['att_hi'])
                 if player['health'] <= 0:
                     alien_win = True
                     """
@@ -98,17 +99,27 @@ while game_running is True:
         elif player_action == '2':
             player['health'] = player['health'] + player['heal']
 
-            player['health'] = player['health'] - calculate_alien_attack()
+            player['health'] = player['health']
+            - calculate_alien_attack(alien['att_low'], alien['att_hi'])
             if player['health'] <= 0:
                 alien_win = True
+                """
+                Control structure for applying heal value to the players health
+                """
 
         elif player_action == '3':
             new_battle = False
             game_running = False
+            """
+            How to exit the game loop
+            """
 
         elif player_action == '4':
             for stats in game_results:
                 print(stats)
+                """
+                Shows the player(s) stats
+                """
 
         else:
             print('Invalid Action')
@@ -116,15 +127,25 @@ while game_running is True:
         if player_win is False and alien_win is False:
             print(player['name'] + ' has ' + str(player['health']) + ' left')
             print(alien['name'] + ' has ' + str(alien['health']) + ' left')
+            """
+            For showing the remaining health after each round
+            """
 
         elif player_win:
             game_over(player['name'])
-            round_result = {'name': player['name'], 'health': player['health'], 'rounds': counter}
+            round_result = {
+                'name': player['name'], 'health': player['health'],
+                'rounds': counter}
+            """
+            Stores the results of a game in a list for each player
+            """
             game_results.append(round_result)
             new_battle = False
 
         elif alien_win:
             game_over(alien['name'])
-            round_result = {'name': player['name'], 'health': player['health'], 'rounds': counter}
+            round_result = {
+                'name': player['name'], 'health': player['health'],
+                'rounds': counter}
             game_results.append(round_result)
             new_battle = False
