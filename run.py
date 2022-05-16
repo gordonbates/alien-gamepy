@@ -33,7 +33,10 @@ game_running = True
 
 while game_running == True:
 
-    print('Please Select An Action\n')
+    player_win = False
+    alien_win = False
+
+    print('Please Select An Action:\n')
     print('1. Attack')
     print('2. Heal')
 
@@ -41,17 +44,27 @@ while game_running == True:
 
     if player_action == '1':
         alien['health'] = alien['health'] - player['attack']
-        player['health'] = player['health'] - alien['attack']
+        if alien['health'] <= 0:
+            player_win = True
+
+        else:
+             player['health'] = player['health'] - alien['attack']
+             if player['health'] <= 0:
+                 alien_win = True
+
+        print('-------')
         print('Alien:')
         print(alien['health'])
         print('-------')
         print('Player:')
         print(player['health'])
+        print('-------\n')
 
 
     elif player_action == '2':
         print('Heal')
     else:
         print('Invalid Action')
-    if player['health'] <= 0:
+
+    if player_win == True or alien_win == True:
         game_running = False
