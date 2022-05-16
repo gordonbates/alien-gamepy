@@ -107,7 +107,8 @@ while game_running is True:
             game_running = False
 
         elif player_action == '4':
-            print(game_results)
+            for stats in game_results:
+                print(stats)
 
         else:
             print('Invalid Action')
