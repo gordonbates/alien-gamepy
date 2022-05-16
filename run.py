@@ -1,3 +1,9 @@
+from random import randint
+"""
+Random module for the dynamic alien attack between 
+the low and high values set
+"""
+
 print("""
 ............................................................
 .                                                          .
@@ -28,10 +34,21 @@ print("""
 
 game_running = True
 
+
+def calculate_alien_attack():
+    return randint(alien['att_low'], alien['att_hi'])
+    """
+    Calculate random attack number
+    """
+
+
 while game_running is True:
     new_battle = True
-    player = {'name': 'Manuel', 'attack': 10, 'heal': 20, 'health': 100}
-    alien = {'name': 'Xenomorph XX121', 'attack': 15, 'health': 100}
+    player = {'name': 'Manuel', 'attack': 10, 'heal': 18, 'health': 100}
+    alien = {'name': 'Xenomorph', 'att_low': 8, 'att_hi': 20, 'health': 100}
+    """
+    player and alien values
+    """
 
     print('.....' * 12)
     print('-------\n' * 5)
@@ -58,16 +75,22 @@ while game_running is True:
             alien['health'] = alien['health'] - player['attack']
             if alien['health'] <= 0:
                 player_win = True
+                """
+                Checks if alien health is above 0, if not player wins
+                """
 
             else:
-                player['health'] = player['health'] - alien['attack']
+                player['health'] = player['health'] - calculate_alien_attack()
                 if player['health'] <= 0:
                     alien_win = True
+                    """
+                    Checks if player health is above 0, if not alien wins
+                    """
 
         elif player_action == '2':
             player['health'] = player['health'] + player['heal']
 
-            player['health'] = player['health'] - alien['attack']
+            player['health'] = player['health'] - calculate_alien_attack()
             if player['health'] <= 0:
                 alien_win = True
 
@@ -80,12 +103,12 @@ while game_running is True:
 
         if player_win is False and alien_win is False:
             print(player['name'] + ' has ' + str(player['health']) + ' left')
-            print(alien['name'] + ' has ' + str(alien['health']) + ' left')     
-        
+            print(alien['name'] + ' has ' + str(alien['health']) + ' left')
+
         elif player_win:
             print(player['name'] + ' wins!!')
             new_battle = False
-        
+
         elif alien_win:
             print('Alien wins! GAME OVER!!')
             new_battle = False
