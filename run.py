@@ -47,6 +47,7 @@ def game_over(winner_name):
 
 
 while game_running is True:
+    counter = 0
     new_battle = True
     player = {'name': 'Manuel', 'attack': 10, 'heal': 14, 'health': 100}
     alien = {'name': 'Xenomorph', 'att_low': 8, 'att_hi': 16, 'health': 100}
@@ -63,7 +64,8 @@ while game_running is True:
     print(alien['name'] + ' has ' + str(alien['health']) + ' health')
 
     while new_battle is True:
-
+        
+        counter = counter + 1
         player_win = False
         alien_win = False
 
@@ -111,12 +113,12 @@ while game_running is True:
 
         elif player_win:
             game_over(player['name'])
-            round_result = {'name': player['name'], 'health': player['health']}
+            round_result = {'name': player['name'], 'health': player['health'], 'rounds': counter}
             print(round_result)
             new_battle = False
 
         elif alien_win:
             game_over(alien['name'])
-            round_result = {'name': player['name'], 'health': player['health']}
+            round_result = {'name': player['name'], 'health': player['health'], 'rounds': counter}
             print(round_result)
             new_battle = False
