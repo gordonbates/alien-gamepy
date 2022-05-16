@@ -44,10 +44,6 @@ def calculate_alien_attack():
 
 def game_over(winner_name):
     print(f'{winner_name} won the battle!!')
-    """
-    When game_over fuction is called and players 
-    name is passed as an arguement
-    """
 
 
 while game_running is True:
@@ -115,8 +111,12 @@ while game_running is True:
 
         elif player_win:
             game_over(player['name'])
+            round_result = {'name': player['name'], 'health': player['health']}
+            print(round_result)
             new_battle = False
 
         elif alien_win:
             game_over(alien['name'])
+            round_result = {'name': player['name'], 'health': player['health']}
+            print(round_result)
             new_battle = False
