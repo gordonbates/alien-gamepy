@@ -38,14 +38,22 @@ game_running = True
 def calculate_alien_attack():
     return randint(alien['att_low'], alien['att_hi'])
     """
-    Calculate random attack number
+    Calculate random attack number using arguments from dictionary below 
+    """
+
+
+def game_over(winner_name):
+    print(f'{winner_name} won the battle!!')
+    """
+    When game_over fuction is called and players 
+    name is passed as an arguement
     """
 
 
 while game_running is True:
     new_battle = True
-    player = {'name': 'Manuel', 'attack': 10, 'heal': 18, 'health': 100}
-    alien = {'name': 'Xenomorph', 'att_low': 8, 'att_hi': 20, 'health': 100}
+    player = {'name': 'Manuel', 'attack': 10, 'heal': 14, 'health': 100}
+    alien = {'name': 'Xenomorph', 'att_low': 8, 'att_hi': 16, 'health': 100}
     """
     player and alien values
     """
@@ -106,9 +114,9 @@ while game_running is True:
             print(alien['name'] + ' has ' + str(alien['health']) + ' left')
 
         elif player_win:
-            print(player['name'] + ' wins!!')
+            game_over(player['name'])
             new_battle = False
 
         elif alien_win:
-            print('Alien wins! GAME OVER!!')
+            game_over(alien['name'])
             new_battle = False
