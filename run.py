@@ -30,7 +30,7 @@ game_running = True
 
 while game_running is True:
     new_battle = True
-    player = {'name': 'Manuel', 'attack': 10, 'heal': 10, 'health': 100}
+    player = {'name': 'Manuel', 'attack': 10, 'heal': 20, 'health': 100}
     alien = {'name': 'Xenomorph XX121', 'attack': 15, 'health': 100}
 
     print('.....' * 12)
@@ -65,7 +65,11 @@ while game_running is True:
                     alien_win = True
 
         elif player_action == '2':
-            print('Heal')
+            player['health'] = player['health'] + player['heal']
+
+            player['health'] = player['health'] - alien['attack']
+            if player['health'] <= 0:
+                alien_win = True
 
         elif player_action == '3':
             new_battle = False
