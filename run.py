@@ -1,9 +1,9 @@
 print("""
-.........................................................
-.                                                       .
-.                Welcome to Alien Gamepy                .
-.                                                       .
-.........................................................
+............................................................
+.                                                          .
+.                Welcome to Alien Gamepy                   .
+.                                                          .
+............................................................
 """)
 
 print("""
@@ -28,12 +28,17 @@ print("""
 
 game_running = True
 
-while game_running == True:
+while game_running is True:
     new_battle = True
     player = {'name': 'Manuel', 'attack': 20, 'heal': 10, 'health': 100}
     alien = {'name': 'Xenomorph XX121', 'attack': 15, 'health': 100}
 
-    while new_battle == True:
+    print('.....' * 12)
+    print('-------\n' * 5)
+    print('Enter Player name')
+    player['name'] = input()
+
+    while new_battle is True:
 
         player_win = False
         alien_win = False
@@ -51,9 +56,9 @@ while game_running == True:
                 player_win = True
 
             else:
-                    player['health'] = player['health'] - alien['attack']
-                    if player['health'] <= 0:
-                        alien_win = True
+                player['health'] = player['health'] - alien['attack']
+                if player['health'] <= 0:
+                    alien_win = True
 
             print('-------')
             print('Alien:')
@@ -62,7 +67,6 @@ while game_running == True:
             print('Player:')
             print(player['health'])
             print('-------\n')
-
 
         elif player_action == '2':
             print('Heal')
@@ -74,5 +78,5 @@ while game_running == True:
         else:
             print('Invalid Action')
 
-        if player_win == True or alien_win == True:
+        if player_win is True or alien_win is True:
             new_battle = False
