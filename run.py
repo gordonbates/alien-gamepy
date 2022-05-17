@@ -1,7 +1,7 @@
 from random import randint
 """
 Random module for the dynamic alien attack between
-the low and high values set
+the low and hi values set
 """
 
 print("""
@@ -57,8 +57,16 @@ while game_running is True:
     """
 
     print('.....' * 12)
-    print('-------\n' * 5)
-    print('Enter Player name')
+    print('........................')
+    print('.......................')
+    print('......................')
+    print('.....................')
+    print('....................')
+    print('...................')
+    """
+    Part of the UI.
+    """
+    print('Enter Player name:') 
     player['name'] = input()
 
     print(player['name'] + ' has ' + str(player['health']) + ' health')
@@ -70,7 +78,8 @@ while game_running is True:
         player_win = False
         alien_win = False
 
-        print('-------')
+        print('-----' * 5)
+        print('-----' * 5)
         print('Please Select An Action:\n')
         print('1. Attack')
         print('2. Heal')
@@ -151,4 +160,3 @@ while game_running is True:
                 'rounds': counter}
             game_results.append(round_result)
             new_battle = False
-
