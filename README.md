@@ -9,16 +9,16 @@ Live site [here](https://alien-gamepy.herokuapp.com/).
 
 ## Table of Contents
 
-- [User Experience (UX)](https://github.com/gordonbates/alien-gamepy/main/README.md#user-experience-ux)
-- [Features](https://github.com/gordonbates/alien-gamepy/main/README.md#features)
-- [Design](https://github.com/gordonbates/alien-gamepy/main/README.md#design)
-- [Flowchart](https://github.com/gordonbates/alien-gamepy/main/README.md#flowchart)
-- [Languages](https://github.com/gordonbates/alien-gamepy/main/README.md#languages)
-- [Programs](https://github.com/gordonbates/alien-gamepy/main/README.md#programs)
-- [Testing](https://github.com/gordonbates/alien-gamepy/main/README.md#testing)
-- [Deployment](https://github.com/gordonbates/alien-gamepy/main/README.md#deployment)
-- [Cloning](https://github.com/gordonbates/alien-gamepy/main/README.md#cloning)
-- [Credits](https://github.com/gordonbates/alien-gamepy/main/README.md#credits)
+- [User Experience (UX)](#user-experience-ux)
+- [Features](#features)
+- [Design](#design)
+- [Flowchart](#flowchart)
+- [Languages](#languages)
+- [Programs](#programs)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Cloning](#cloning)
+- [Credits](#credits)
 
 # User Experience (UX)
 
@@ -254,4 +254,4 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 - Thanks to Code Institute Student Care Support & Kasia for all the help and support.
 - Thanks to my mentor
 
-## [Back To The Top](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#alien-gamepy)
+## [Back To The Top](#alien-gamepy)
