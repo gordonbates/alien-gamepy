@@ -1,31 +1,45 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Screenshot 2022-05-17 at 10 38 51](https://user-images.githubusercontent.com/93173575/168781385-45998e52-8785-4e1d-8c7a-cb1c5e1636b4.jpg)
 
-Welcome gordonbates,
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+# Alien GamePy
 
-## Reminders
+A backend turn based Python Game where the player can battle against Xenomorph XX121!
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## Table of Contents
 
-## Creating the Heroku app
+- [User Experience (UX)]()
+- [Design]()
+- [Features]()
+- [Languages]()
+- [Programs]()
+- [Testing]()
+- [Deployment]()
+- [Cloning]()
+- [Credits]()
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+# User Experience (UX)
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## User Story
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+### Intended Audience
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+The intended audience is for children (7+) and adults of all ages. 
 
-Connect your GitHub repository and deploy as normal.
+This is a turn based game where both the Player and Alien start with 100 Health. The players Attack yields 10 damage to the Alien's health whereas the Alien has a dymanic level of attack ranging randomly from 7 to 16! 
 
-## Constraints
+The player can opt, instead of an Attack, for a Heal which replenishes health by 12. Let's hope the Alien's return attack is less than 12!!
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+The first to deplete their health to 0 looses the battle.
 
------
-Happy coding!
+# Design
+
+The player is greeted with a Welcome to Alien GamePy message, ASCII Alien Art underneat along with a player name input.
+<img width="550" alt="1" src="https://user-images.githubusercontent.com/93173575/168786948-370d11aa-4ba9-409f-b626-7f5b1cead406.png">
+
+Here's the Player (Dallas) enters his name and 4 actions options are loaded up.
+<img width="555" alt="2" src="https://user-images.githubusercontent.com/93173575/168786959-8c3239b1-46b5-4377-8776-24c2e104aeb5.png">
+
+The Player chooses action 1. Attack and we can see the Player recieved 13 damage to his health and the Alien recieved 10 as expected.
+<img width="553" alt="3" src="https://user-images.githubusercontent.com/93173575/168786978-daae18cd-2892-4b20-8d41-f2faaffe0f9b.png">
+
+
