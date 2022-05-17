@@ -9,15 +9,16 @@ Live site [here](https://alien-gamepy.herokuapp.com/).
 
 ## Table of Contents
 
-- [User Experience (UX)]()
-- [Design]()
-- [Features]()
-- [Languages]()
-- [Programs]()
-- [Testing]()
-- [Deployment]()
-- [Cloning]()
-- [Credits]()
+- [User Experience (UX)](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#features)
+- [Features](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#features)
+- [Design](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#design)
+- [Flowchart](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#flowchart)
+- [Languages](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#languages)
+- [Programs](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#programs)
+- [Testing](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#testing)
+- [Deployment](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#deployment)
+- [Cloning](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#cloning)
+- [Credits](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#credits)
 
 # User Experience (UX)
 
@@ -33,41 +34,55 @@ The player can opt, instead of an Attack, for a Heal which replenishes health by
 
 The first to deplete their health to 0 looses the battle.
 
-# Design
+# Features
+
+## Landing page
 
 The player is greeted with a Welcome to Alien GamePy message, ASCII Alien Art along with a player name input.
 
 <img width="550" alt="1" src="https://user-images.githubusercontent.com/93173575/168786948-370d11aa-4ba9-409f-b626-7f5b1cead406.png">
 
+## Player name input
 
-Here's the Player (Dallas) enters his name and 4 actions options are loaded up.
+Here's the Player 'Dallas' enters his name and 4 actions options are loaded up.
 
 <img width="555" alt="2" src="https://user-images.githubusercontent.com/93173575/168786959-8c3239b1-46b5-4377-8776-24c2e104aeb5.png">
 
+## Attack action
 
 The Player chooses action 1. Attack and we can see the Player recieved 13 damage to his health and the Alien recieved 10 as expected.
 
 <img width="553" alt="3" src="https://user-images.githubusercontent.com/93173575/168786978-daae18cd-2892-4b20-8d41-f2faaffe0f9b.png">
 
+## Heal action
 
 Here the Player chose action 2. Heal and we can see the Alien didnt recieve damage and Player was healed and subsequently attacked by the Alien
 
 <img width="564" alt="4" src="https://user-images.githubusercontent.com/93173575/168786996-2ed5b791-4515-4ead-9c17-e1e7a0425300.png">
 
+## Stats action
 
-The game continued on until a winner was declared and new Player Bob entered his name and checked previous players stats. Included are previous players name, what their remaining health was and how many rounds the battle took.
+The game continued on until a winner was declared and new Player 'Bob' entered his name and checked previous players stats. Included are previous players name, what their remaining health was and how many rounds the battle took.
+
 <img width="555" alt="5" src="https://user-images.githubusercontent.com/93173575/168787011-ffd7af90-9cbb-4081-a411-cee222c088f8.png">
+
+To re-run the program hit Run Program
+
+<img width="1220" alt="Screenshot 2022-05-17 at 16 02 08" src="https://user-images.githubusercontent.com/93173575/168843971-396ab06d-04dd-433e-82b2-95046a576d70.png">
+
+# Design
 
 ## Flowchart
 
 Lucidchart a diagramming application was used to create the flowchart for the game
+
 ![Flowchart pp3 (1)](https://user-images.githubusercontent.com/93173575/168798240-4be911da-d948-4812-aca7-f3bf2cacdc81.png)
 
 # Features
 
 ## - Health level
 
-- The Health level of both Player and Alien is updated after every turn.
+- The health level of both Player and Alien is updated after every round.
 
 ## - Player Stats
 
@@ -113,7 +128,7 @@ Lucidchart a diagramming application was used to create the flowchart for the ga
 ![My project (1)](https://user-images.githubusercontent.com/93173575/168806043-6421ea62-60a8-4971-84ef-7cf4ff29ad30.png)
 
 
-## Bug Testing
+## Bugs
 
 Bugs were introduced to the code when trying to refactor the code in order not to exceed the 80 character line limit in GitPod.
 After noticing that the Alien was not taking damage code was rewriiten to not exceed the line limit and the Alien was able to recieve damage.
@@ -173,7 +188,7 @@ command: git push heroku main
 
 For deployment of the website to a live publicly accessible website, the following steps were required:
 
-- Confirmed that correct repository is selected as 'rock_paper_scissors'.
+- Confirmed that correct repository is selected as 'alien-gamepy'.
 - Select 'Settings'.
 - Scroll down to 'GitHub Pages' and click on 'Check it out here!'.
 - On the 'Source' section, select Branch as 'main' and click on 'Save'.
@@ -191,7 +206,7 @@ For deployment of the website to a local environment, the following steps were r
 
 To clone a copy of the code in the repository, the following steps are required:
 
-- Go to https://github.com and select the Repository called 'rock_paper_scissors'
+- Go to https://github.com and select the Repository called 'alien-gamepy'
 - Click on the button called 'Code" and a pop-out window will show options to Clone through: 
    - HTTPS
    - SSH
@@ -203,10 +218,11 @@ To clone a copy of the code in the repository, the following steps are required:
 4. Open Terminal.
 5. Change the current working directory to the location where you want the cloned directory.
 6. Type > git clone and then paste the URL you copied earlier.
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
 7. Press Enter to create your local clone.
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY Cloning into Spoon-Knife... remote: Counting objects: 10, done. remote: Compressing objects: 100% (8/8), done. remove: Total 10 (delta 1), reused 10 (delta 1) Unpacking objects: 100% (10/10), done.
 
 8. Repository Clone is now complete.
 
@@ -225,3 +241,4 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY Cloning into Spoon-
 - [Code Institute](https://learn.codeinstitute.net/)
 - Thanks to fellow students in our Code Institute Slack Channels.
 - Thanks to Code Institute Student Care Support & Kasia for all the help and support.
+- Thanks to my mentor
