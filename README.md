@@ -9,16 +9,16 @@ Live site [here](https://alien-gamepy.herokuapp.com/).
 
 ## Table of Contents
 
-- [User Experience (UX)](https://github.com/gordonbates/alien-gamepy/README.md#features)
-- [Features](https://github.com/gordonbates/alien-gamepy/README.md#features)
-- [Design](https://github.com/gordonbates/alien-gamepy/README.md#design)
-- [Flowchart](https://github.com/gordonbates/alien-gamepy/README.md#flowchart)
-- [Languages](https://github.com/gordonbates/alien-gamepy/README.md#languages)
-- [Programs](https://github.com/gordonbates/alien-gamepy/README.md#programs)
-- [Testing](https://github.com/gordonbates/alien-gamepy/README.md#testing)
-- [Deployment](https://github.com/gordonbates/alien-gamepy/README.md#deployment)
-- [Cloning](https://github.com/gordonbates/alien-gamepy/README.md#cloning)
-- [Credits](https://github.com/gordonbates/alien-gamepy/README.md#credits)
+- [User Experience (UX)](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#user-experience-ux)
+- [Features](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#features)
+- [Design](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#design)
+- [Flowchart](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#flowchart)
+- [Languages](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#languages)
+- [Programs](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#programs)
+- [Testing](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#testing)
+- [Deployment](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#deployment)
+- [Cloning](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#cloning)
+- [Credits](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#credits)
 
 # User Experience (UX)
 
