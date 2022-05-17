@@ -1,30 +1,37 @@
+# Alien GamePy
+
 ![Screenshot 2022-05-17 at 10 38 51](https://user-images.githubusercontent.com/93173575/168781385-45998e52-8785-4e1d-8c7a-cb1c5e1636b4.jpg)
 
 
-# Alien GamePy
-
-A backend turn based Python Game where the player can battle against Xenomorph XX121!
+## A backend turn based CLI Game where you can battle against Xenomorph XX121!
 
 Live site [here](https://alien-gamepy.herokuapp.com/).
 
 ## Table of Contents
 
-- [User Experience (UX)](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#features)
-- [Features](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#features)
-- [Design](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#design)
-- [Flowchart](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#flowchart)
-- [Languages](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#languages)
-- [Programs](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#programs)
-- [Testing](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#testing)
-- [Deployment](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#deployment)
-- [Cloning](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#cloning)
-- [Credits](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#credits)
+- [User Experience (UX)](https://github.com/gordonbates/alien-gamepy/README.md#features)
+- [Features](https://github.com/gordonbates/alien-gamepy/README.md#features)
+- [Design](https://github.com/gordonbates/alien-gamepy/README.md#design)
+- [Flowchart](https://github.com/gordonbates/alien-gamepy/README.md#flowchart)
+- [Languages](https://github.com/gordonbates/alien-gamepy/README.md#languages)
+- [Programs](https://github.com/gordonbates/alien-gamepy/README.md#programs)
+- [Testing](https://github.com/gordonbates/alien-gamepy/README.md#testing)
+- [Deployment](https://github.com/gordonbates/alien-gamepy/README.md#deployment)
+- [Cloning](https://github.com/gordonbates/alien-gamepy/README.md#cloning)
+- [Credits](https://github.com/gordonbates/alien-gamepy/README.md#credits)
 
 # User Experience (UX)
 
 ## User Story
 
-### Intended Audience
+- Play the game across different devices and browsers.
+- Understand how to play the game.
+- Have attack, heal, exit options.
+- Have results option to see player(s) name, health remaining after battle and how many rounds the battle had.
+- Have invalid messages appear if incorrected information is inputted.
+- Have the option to play again.
+
+### How To Play
 
 The intended audience is for children (7+) and adults of all ages. 
 
@@ -56,7 +63,7 @@ The Player chooses action 1. Attack and we can see the Player recieved 13 damage
 
 ## Heal action
 
-Here the Player chose action 2. Heal and we can see the Alien didnt recieve damage and Player was healed and subsequently attacked by the Alien
+Here the Player chose action 2. Heal and we can see the Alien didnt recieve damage and Player was healed and subsequently attacked by the Alien.
 
 <img width="564" alt="4" src="https://user-images.githubusercontent.com/93173575/168786996-2ed5b791-4515-4ead-9c17-e1e7a0425300.png">
 
@@ -66,7 +73,7 @@ The game continued on until a winner was declared and new Player 'Bob' entered h
 
 <img width="555" alt="5" src="https://user-images.githubusercontent.com/93173575/168787011-ffd7af90-9cbb-4081-a411-cee222c088f8.png">
 
-To re-run the program hit Run Program
+To re-run the program hit Run Program.
 
 <img width="1220" alt="Screenshot 2022-05-17 at 16 02 08" src="https://user-images.githubusercontent.com/93173575/168843971-396ab06d-04dd-433e-82b2-95046a576d70.png">
 
@@ -74,7 +81,7 @@ To re-run the program hit Run Program
 
 ## Flowchart
 
-Lucidchart a diagramming application was used to create the flowchart for the game
+Lucidchart a diagramming application was used to create the flowchart for the game.
 
 ![Flowchart pp3 (1)](https://user-images.githubusercontent.com/93173575/168798240-4be911da-d948-4812-aca7-f3bf2cacdc81.png)
 
@@ -102,6 +109,7 @@ Lucidchart a diagramming application was used to create the flowchart for the ga
 
 ## Programs
 
+- [Heroku:](https://www.heroku.com/) was used to deploy the project to.
 - [GitPod:](https://gitpod.io/) was used as the main language editor for programming the project.
 - [GitHub:](https://github.com/) was used to back up instances of the GitPod repository.
 - [Flowchart](https://www.lucidchart.com/) was used for flow structure on the project.
@@ -125,7 +133,7 @@ Lucidchart a diagramming application was used to create the flowchart for the ga
 
 ![My project](https://user-images.githubusercontent.com/93173575/168805776-9a47eab1-81e2-4182-a8a2-38090b3da077.png)
 
-![My project (1)](https://user-images.githubusercontent.com/93173575/168806043-6421ea62-60a8-4971-84ef-7cf4ff29ad30.png)
+
 
 
 ## Bugs
@@ -160,13 +168,13 @@ Get app name from heroku.
 heroku apps
 ```
 
-Set the heroku remote. (Replace <app_name> with actual app name and remove the <> characters)
+Set the heroku remote. (Replace <app_name> with actual app name and remove the <> characters).
 
 ```
 heroku git:remote -a <app_name>
 ```
 
-Add and commit any changes to code if applicable
+Add and commit any changes to code if applicable.
 
 ```
 git add . 
@@ -175,7 +183,7 @@ git add .
 git commit -m "Deploy to Heroku via CLI"
 ```
 
-Push to both GitHub and Heroku
+Push to both GitHub and Heroku.
 
 ```
 git push origin main
@@ -196,11 +204,14 @@ For deployment of the website to a live publicly accessible website, the followi
 
 ## Gitpod
 
-For deployment of the website to a local environment, the following steps were required:
+For deployment of the website to a local environment, the following steps are required:
 
 - Confirmed that correct repository is selected as 'alien-gamepy'.
 - To run a new Python server, open a terminal window and type the following code and hit enter:
-  python3 run.py
+
+```
+python3 run.py
+```
 
 # Cloning 
 
@@ -233,7 +244,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 - [ASCII Art Archive](https://www.asciiart.eu/) was used for the alien character text image on the UI.
 - [PNGhut](https://pnghut.com/) was used in sourcing the Python png.
 - [LucidChart](https://www.lucidchart.com/) was used for the diagramming the flow structure.
-- [Academind](https://www.youtube.com/c/Academind) was used for extra tutourials
+- [Academind](https://www.youtube.com/c/Academind) was used for extra tutourials.
 
 
 ## Acknowledgements
@@ -242,3 +253,5 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 - Thanks to fellow students in our Code Institute Slack Channels.
 - Thanks to Code Institute Student Care Support & Kasia for all the help and support.
 - Thanks to my mentor
+
+## [Back To The Top](https://github.com/gordonbates/alien-gamepy/edit/main/README.md#alien-gamepy)
